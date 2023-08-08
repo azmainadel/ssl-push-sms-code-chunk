@@ -14,9 +14,9 @@ const sslKeys = {
   SID: config.ssl_sms_gw.sid,
 };
 
-const sendSmsEn = async (smsTextBn, phoneNumber) => {
+const sendSmsEn = async (smsTextEn, phoneNumber) => {
   try {
-    const smsBody = smsTextBn;
+    const smsBody = smsTextEn;
     const response = await sendSmsRequestToSSL(smsBody, phoneNumber);
     const parsedResponse = await parseXml(response.data);
     logger.info(parsedResponse);
