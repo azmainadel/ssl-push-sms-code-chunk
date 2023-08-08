@@ -1,0 +1,60 @@
+{
+  "name": "ssl-push-sms-code-chunk",
+  "version": "1.0.0",
+  "description": "Chunk of code for your NodeJs app to integrate the SSL Wireless Push SMS API",
+  "repository": "https://github.com/azmainadel/ssl-push-sms-code-chunk",
+  "author": "Muhammad Azmain Adel <azmainadel47@gmail.com>",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "rest",
+    "api",
+    "ssl",
+    "sms-gateway",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "joi",
+    "eslint",
+    "prettier"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cross-env": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "http-status": "^1.4.0",
+    "lodash": "^4.17.21",
+    "joi": "^17.3.0",
+    "pm2": "^5.1.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.2.1",
+    "xss-clean": "^0.1.1",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.7",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^24.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.0",
+    "prettier": "^2.0.5",
+    "supertest": "^6.0.1"
+  }
+}
